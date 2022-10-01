@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["src_components_lib_canvas-nest_js"],{
+
+/***/ "./src/components/lib/canvas-nest.js":
+/*!*******************************************!*\
+  !*** ./src/components/lib/canvas-nest.js ***!
+  \*******************************************/
+/***/ ((module) => {
+
+eval("module.exports=function () {\r\n    function o(w, v, i) {\r\n        return w.getAttribute(v) || i\r\n    }\r\n\r\n    function j(i) {\r\n        return document.getElementsByTagName(i)\r\n    }\r\n\r\n    function l() {\r\n        var i = j(\"script\"),\r\n            w = i.length,\r\n            v = i[w - 1];\r\n        return {\r\n            l: w,\r\n            z: o(v, \"zIndex\", -1),\r\n            o: o(v, \"opacity\", 0.5),\r\n            c: o(v, \"color\", \"0,0,0\"),\r\n            n: o(v, \"count\", 99)\r\n        }\r\n    }\r\n\r\n    function k() {\r\n        r = u.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth, n = u.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight\r\n    }\r\n\r\n    function b() {\r\n        e.clearRect(0, 0, r, n);\r\n        var w = [f].concat(t);\r\n        var x, v, A, B, z, y;\r\n        t.forEach(function (i) {\r\n            i.x += i.xa, i.y += i.ya, i.xa *= i.x > r || i.x < 0 ? -1 : 1, i.ya *= i.y > n || i.y < 0 ? -1 : 1, e.fillRect(i.x - 0.5, i.y - 0.5, 1, 1);\r\n            for (v = 0; v < w.length; v++) {\r\n                x = w[v];\r\n                if (i !== x && null !== x.x && null !== x.y) {\r\n                    B = i.x - x.x, z = i.y - x.y, y = B * B + z * z;\r\n                    y < x.max && (x === f && y >= x.max / 2 && (i.x -= 0.03 * B, i.y -= 0.03 * z), A = (x.max - y) / x.max, e.beginPath(), e.lineWidth = A / 2, e.strokeStyle = \"rgba(\" + s.c + \",\" + (A + 0.2) + \")\", e.moveTo(i.x, i.y), e.lineTo(x.x, x.y), e.stroke())\r\n                }\r\n            }\r\n            w.splice(w.indexOf(i), 1)\r\n        }), m(b)\r\n    }\r\n    var u = document.createElement(\"canvas\"),\r\n        s = l(),\r\n        c = \"c_n\" + s.l,\r\n        e = u.getContext(\"2d\"),\r\n        r, n, m = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (i) {\r\n            window.setTimeout(i, 1000 / 45)\r\n        },\r\n        a = Math.random,\r\n        f = {\r\n            x: null,\r\n            y: null,\r\n            max: 20000\r\n        };\r\n    u.id = c;\r\n    u.style.cssText = \"position:fixed;top:0;left:0;z-index:\" + s.z + \";opacity:\" + s.o;\r\n    j(\"body\")[0].appendChild(u);\r\n    k();\r\n    document.addEventListener(\"onresize\",k)\r\n    window.onmousemove = function (i) {\r\n        i = i || window.event, f.x = i.clientX, f.y = i.clientY\r\n    }, window.onmouseout = function () {\r\n        f.x = null, f.y = null\r\n    };\r\n    for (var t = [], p = 0; s.n > p; p++) {\r\n        var h = a() * r,\r\n            g = a() * n,\r\n            q = 2 * a() - 1,\r\n            d = 2 * a() - 1;\r\n        t.push({\r\n            x: h,\r\n            y: g,\r\n            xa: q,\r\n            ya: d,\r\n            max: 6000\r\n        })\r\n    }\r\n    setTimeout(function () {\r\n        b()\r\n    }, 100)\r\n};\n\n//# sourceURL=webpack:///./src/components/lib/canvas-nest.js?");
+
+/***/ })
+
+}]);
