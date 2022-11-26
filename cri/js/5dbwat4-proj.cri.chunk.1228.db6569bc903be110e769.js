@@ -1,0 +1,1 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[1228],{1228:n=>{n.exports="## Current Plans\n\n需要注意的是，这里收录的是使用者的计划。如果想找开发者的计划，请前往changelog&plans\n\n### 2022/10/10\n\n收集阐释性的语句。"}}]);
