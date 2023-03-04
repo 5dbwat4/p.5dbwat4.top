@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>RandomW</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<style>
+    .track{
+        width: 1%;
+height: 20px;
+display: inline-block;background-color: brown;padding: 3px;border-radius: 10px;
+    }
+</style>
+    </head>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script> -->
+<body>
+
+<div  id="rand"  style="    position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background:  -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%)">
+<div id="ins"></div>
+<div class="__preLoading__block" style="z-index:3;height: 100px;
+display: block;
+position: fixed;
+left: 0;
+width: 100%;
+top: calc(50% - 50px);
+background-color: rgba(255,255,255,0.45);" >
+    <div class="__preLoading__tmpBox1" style="    font-size: 0px;
+    text-align: center;
+    width: calc( 100% - 105px);
+        display: inline-block;
+        position: absolute;
+height: 100px;"><p class="__preLoading__Words" style="    font-family: simhei,'simhei';
+		font-size: 70px;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: 60px;
+		letter-spacing: 0.304em;
+	line-height: 1.5;
+	font-size: 70px;" id="name-host"></p></div></div>
+    <div id="note" style="position: fixed;
+    display: block;
+    bottom: 10%;
+    left: calc(50% - 189px/2);">单击屏幕以开始/暂停</div>
+</div></div>
+    <script>
+       
+var stopped=false
+	    function animate(){
+				if(!stopped){
+				document.getElementById("name-host").innerText=Math.floor(Math.random()*59)+1
+						    requestAnimationFrame(animate)}
+			}
+	    animate()
+	    document.body.addEventListener("click",()=>{
+    if(stopped){
+        stopped=false
+        animate()
+    }else{
+        stopped=true
+    }
+})
+    </script>
+
+    </body>
+
+    </html>
