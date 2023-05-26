@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>RandomW</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<style>
+    .track{
+        /* width: 1%;
+height: 20px;
+display: inline-block;background-color: brown;padding: 3px;border-radius: 10px; */
+display:none;
+    }
+</style>
+    </head>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script> -->
+<body>
+
+<div  id="rand"  style="    position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: rgba(255,255,255,0.45);">
+<div id="ins"></div>
+<div class="__preLoading__block" style="z-index:3;height: 100px;
+display: block;
+position: fixed;
+left: 0;
+width: 100%;
+top: calc(50% - 50px);
+background-color: rgba(255,255,255,0.45);" >
+    <div class="__preLoading__tmpBox1" style="    font-size: 0px;
+    text-align: center;
+    width: calc( 100% - 105px);
+        display: inline-block;
+        position: absolute;
+height: 100px;"><p class="__preLoading__Words" style="    font-family: simhei,'simhei';
+		font-size: 70px;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: 60px;
+		letter-spacing: 0.304em;
+	line-height: 1.5;
+	font-size: 70px;" id="name-host"></p></div></div>
+    <div id="note" style="position: fixed;
+    display: block;
+    bottom: 10%;
+    left: calc(50% - 189px/2);">
+    <!-- Click the window to toggle<br/>Programmed by zhengjiabao(@5dbwat4) -->
+</div>
+</div></div>
+    <script type="module">
+        var namedata=[
+"周筱彤",
+"高锦慧",
+"赵好",
+"顾玢临",
+"宗心言",
+"邵瑞琪",
+"孟子勉",
+"孙雅妍",
+"张思静",
+"王诗睿",
+"刘亦凡",
+"周语桐",
+"顾超",
+"刘诗侠",
+"贾封涵",
+"刘翔",
+"陈诚",
+"钱进",
+"赵启睿",
+"胡昊旻",
+"张成斌",
+"陈震昊",
+"张丞皓",
+"朱玄",
+"丁然",
+"万连勇",
+"丁浩然",
+"李一帆",
+"赵黄文焘",
+"冯时朗",
+"田昊宇",
+"周阚天成",
+"胥松恒",
+"王鹏杰",
+"范子航",
+"严李睿",
+"孙嘉诺",
+"唐佳乐",
+"滕飞",
+"谢子贤",
+"冯锡伟",
+// "郑家宝",
+"陆宇坤",
+"朱程辉",
+"戴鑫",
+"葛一凡",
+"钱瑞涛",
+"花宇恒",
+"吴思泽",
+"章胤铭",
+"顾翔奕",
+"钱品言",
+"王一乐",
+"潘儒祺",
+"杨钰鑫",
+"仲嘉辉",
+"缪鹏",
+"许源",
+"张宇轩",
+"卢运宸",
+"谢池宇",
+"孙翌霖",
+"周子恒",
+"王璟琪",
+"马海天",
+"吴之翔"]
+
+,stopped=false
+
+var instr=""
+for (let i = 0; i < namedata.length; i++) {
+    instr+="<div id='tra-"+i+"' class='track'></div>"
+}
+document.getElementById("ins").innerHTML=instr
+
+var opacityList=new Array(66)
+
+var tmpn=-1
+
+var  animate=()=>{
+
+        
+
+    if(!stopped){
+let ra=tmpn=Math.floor(Math.random()*namedata.length)
+
+document.getElementById("name-host").innerText=namedata[ra]
+for (let index = 0; index < opacityList.length; index++) {
+    if(!opacityList[index]){
+        opacityList[index]=0
+    }else{
+        opacityList[index]=opacityList[index]*0.95
+    }
+    document.getElementById("tra-"+index).style.opacity=opacityList[index]
+}
+opacityList[ra]=1
+document.getElementById("tra-"+ra).style.opacity=1
+requestAnimationFrame(animate)
+    }
+    if(stopped){
+        let flag=false
+        for (let index = 0; index < opacityList.length; index++) {
+            
+//             anime({
+//   targets: "#tra-"+index,
+//   opacity: "0%",
+//   easing: 'easeInOutQuad',
+//   duration: 3000
+// });
+if(index==tmpn)continue
+if(opacityList[index]>=0.001&&index!=tmpn){
+    flag=true
+}
+
+opacityList[index]=opacityList[index]*0.95
+document.getElementById("tra-"+index).style.opacity=opacityList[index]
+    }
+
+    if(flag){
+        requestAnimationFrame(animate)
+        console.log("test");
+    }
+    }
+}
+
+document.body.addEventListener("click",()=>{
+    if(stopped){
+        stopped=false
+        animate()
+    }else{
+        stopped=true
+    }
+})
+
+animate()
+    </script>
+
+    </body>
+
+    </html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" /> 
+<title>Sorry, it is not available temporary.</title>
+</head>
+<body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+var content = document.createElement("p");
+content.innerHTML="您正在尝试访问服务<code style='font-family:Consolas'>"+(new URLSearchParams( location.search)).get("pname")+"</code>，但是，这个服务暂时无法访问。这通常不是您的问题。通常，服务进行版本更新时会将从公网上断开。您只需要稍等一会儿即可。";
+swal({
+    title: "服务暂不可用",
+    content,
+    icon:"error",
+    buttons:false,
+  closeOnClickOutside: false,
+});
+</script>
+
+    </body>
+</html>
