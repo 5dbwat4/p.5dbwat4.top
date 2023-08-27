@@ -1,0 +1,1 @@
+import{a2 as e,a8 as t,l as o}from"./runtime-core.esm-bundler-42be6625.js";const _={id:"coreop"},s={__name:"export",setup(n){return e(()=>{document.getElementById("coreop").innerHTML=localStorage.getItem("___thost___html_export")}),(r,a)=>(t(),o("div",_))}};export{s as default};

@@ -1,0 +1,1 @@
+import{R as u,C as o,F as a}from"./runtime-core.esm-bundler-42be6625.js";function n(r){return r.some(e=>u(e)?!(e.type===o||e.type===a&&!n(e.children)):!0)?r:null}function s(r,e){return r&&n(r())||e()}function f(r,e,t){return r&&n(r(e))||t(e)}function l(r,e){const t=r&&n(r());return e(t||null)}function m(r){return!(r&&n(r()))}export{s as a,f as b,m as i,l as r};

@@ -1,0 +1,1 @@
+const l=[{value:0,label:"综合"},{value:1,label:"最热"},{value:2,label:"最新"}];export{l as default};
