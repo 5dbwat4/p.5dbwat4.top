@@ -1,0 +1,1 @@
+{"version":3,"file":"define_basic_qtypes-ddf25d69.js","sources":["../../src/shared/define_basic_qtypes.js"],"sourcesContent":["const qtypes={\r\n    id:\"\",\r\n    qid:\"\",\r\n    q:\"<p>Loading ... </p>\",\r\n    extra:\"{}\",\r\n\r\n}\r\n\r\nexport{qtypes}"],"names":["qtypes"],"mappings":"AAAK,MAACA,EAAO,CACT,GAAG,GACH,IAAI,GACJ,EAAE,sBACF,MAAM,IAEV"}

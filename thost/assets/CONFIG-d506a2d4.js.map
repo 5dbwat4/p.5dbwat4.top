@@ -1,0 +1,1 @@
+{"version":3,"file":"CONFIG-d506a2d4.js","sources":["../../src/views/zujuanink-v3/CONFIG.js"],"sourcesContent":["export const ProjRoutePrefix=\"/zujuanink\""],"names":["ProjRoutePrefix"],"mappings":"AAAY,MAACA,EAAgB"}
