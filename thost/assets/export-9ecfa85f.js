@@ -1,0 +1,1 @@
+import{a2 as e,a8 as t,l as n}from"./runtime-core.esm-bundler-c066f4bf.js";const o={id:"GENINIMain"},_={__name:"export",setup(a){return e(()=>{document.getElementById("GENINIMain").innerHTML=window.vhtmlTemplate}),(r,c)=>(t(),n("div",o))}};export{_ as default};
