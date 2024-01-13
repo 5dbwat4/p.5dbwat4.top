@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHR: A humanoid alive</title>
+    <link rel="icon" type="image/ico" sizes="32x32" href="./assets/favicon-32.ico">
+    <link rel="icon" type="image/ico" sizes="48x48" href="./assets/favicon-48.ico">
+    <link rel="icon" type="image/ico" sizes="16x16" href="./assets/favicon-16.ico">
+    <link rel="icon" type="image/ico" sizes="64x64" href="./assets/favicon-64.ico">
+    <script type="module" crossorigin src="/assets/index-E03EQ1nb.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-VLviVf97.css">
+  </head>
+  <body>
+    <div id="app"> <div class="loader-container">
+       <img src="WIN_20190709_17_42_39_Pro (1).gif"/>
+      <div class="loader"></div>
+      <p class="loader-info">你先别急，先让数据飞一会儿</p>
+    </div>
+      <style>
+        .loader-container{
+          width: fit-content;
+          display: block;
+          margin: 0 auto;
+          text-align: center;
+        }
+        .loader-info{
+          font-family: Cambria,"kaiti", Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .loader {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #362a79;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  -webkit-animation: rotation 1s linear infinite;
+          animation: rotation 1s linear infinite;
+}
+.loader:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: #8960d9 transparent;
+}
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+      </style></div>
+  </body>
+</html>
