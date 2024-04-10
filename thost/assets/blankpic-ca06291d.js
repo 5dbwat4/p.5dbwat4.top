@@ -1,1 +1,1 @@
-const t='data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><foreignObject width="300" height="50"><body xmlns="http://www.w3.org/1999/xhtml"><p>以手动添加错题的方式被收录</p></body></foreignObject></svg>';export{t as b};
+const t='data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><foreignObject width="300" height="50"><body xmlns="http://www.w3.org/1999/xhtml"><p>\u4EE5\u624B\u52A8\u6DFB\u52A0\u9519\u9898\u7684\u65B9\u5F0F\u88AB\u6536\u5F55</p></body></foreignObject></svg>';export{t as b};

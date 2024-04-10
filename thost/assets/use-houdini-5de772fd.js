@@ -1,0 +1,1 @@
+import{a as t}from"./Button-591cb8c7.js";let r=!1;function i(){if(t&&window.CSS&&!r&&(r=!0,"registerProperty"in(window==null?void 0:window.CSS)))try{CSS.registerProperty({name:"--n-color-start",syntax:"<color>",inherits:!1,initialValue:"#0000"}),CSS.registerProperty({name:"--n-color-end",syntax:"<color>",inherits:!1,initialValue:"#0000"})}catch{}}export{i as u};

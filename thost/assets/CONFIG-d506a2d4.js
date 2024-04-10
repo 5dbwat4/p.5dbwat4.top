@@ -1,1 +1,1 @@
-const o="/zujuanink";export{o as P};
+const n="/zujuanink";export{n as P};

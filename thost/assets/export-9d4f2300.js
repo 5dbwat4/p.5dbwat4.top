@@ -1,0 +1,1 @@
+import{a2 as e,a8 as t,l as o}from"./index-c2ed52a5.js";const r={id:"coreop"},a={__name:"export",setup(_){return e(()=>{document.getElementById("coreop").innerHTML=localStorage.getItem("___thost___html_export")}),(n,s)=>(t(),o("div",r))}};export{a as default};

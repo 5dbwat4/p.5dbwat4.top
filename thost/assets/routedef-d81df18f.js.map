@@ -1,0 +1,1 @@
+{"version":3,"mappings":"+CAAeA,GACX,CAAC,KAAK,oBAAoB,aAAW,CAAIC,EAAA,WAAO,qBAAa,KAAC,iCAClE","names":["routedef","__vitePreload"],"sources":["../../src/views/standalone-functions/danas/routedef.js"],"sourcesContent":["export default [\r\n    {path:\"/func.danas/entry\",component: ()=>import(\"./entry.vue\")},\r\n]"],"file":"assets/routedef-d81df18f.js"}

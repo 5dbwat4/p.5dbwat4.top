@@ -1,1 +1,1 @@
-const t=new WeakSet;function n(e){t.add(e)}function f(e){return!t.has(e)}export{f as e,n as m};
+const t=new WeakSet;function e(n){t.add(n)}function a(n){return!t.has(n)}export{a as e,e as m};
