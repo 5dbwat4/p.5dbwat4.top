@@ -1,0 +1,1 @@
+import{a5 as e,ab as t,m as a}from"./index-6b27469d.js";const n={id:"GENINIMain"},m={__name:"export",setup(o){return e(()=>{document.getElementById("GENINIMain").innerHTML=window.vhtmlTemplate}),(r,i)=>(t(),a("div",n))}};export{m as default};

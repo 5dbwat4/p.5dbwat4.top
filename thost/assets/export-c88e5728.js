@@ -1,1 +1,0 @@
-import{a2 as e,a8 as t,l as a}from"./index-c2ed52a5.js";const n={id:"GENINIMain"},o={__name:"export",setup(r){return e(()=>{document.getElementById("GENINIMain").innerHTML=window.vhtmlTemplate}),(i,m)=>(t(),a("div",n))}};export{o as default};

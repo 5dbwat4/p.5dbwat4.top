@@ -1,0 +1,1 @@
+import{useRouter as o,useRoute as s,RouterView as e}from"./vue-router-85f8dd9e.js";import{ab as t,k as a,bc as r}from"./index-6b27469d.js";const u={__name:"roomHost",setup(m){return o(),s(),(p,c)=>(t(),a(r(e)))}};export{u as default};

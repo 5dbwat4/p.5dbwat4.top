@@ -1,1 +1,0 @@
-import{aZ as s,a2 as t,aY as i}from"./index-c2ed52a5.js";function n(a,...r){if(Array.isArray(a))a.forEach(o=>n(o,...r));else return a(...r)}function e(){const a=s(!1);return t(()=>{a.value=!0}),i(a)}export{n as c,e as i};

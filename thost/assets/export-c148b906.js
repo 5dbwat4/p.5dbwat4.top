@@ -1,0 +1,1 @@
+import{a5 as e,ab as t,m as o}from"./index-6b27469d.js";const r={id:"coreop"},a={__name:"export",setup(_){return e(()=>{document.getElementById("coreop").innerHTML=localStorage.getItem("___thost___html_export")}),(m,n)=>(t(),o("div",r))}};export{a as default};

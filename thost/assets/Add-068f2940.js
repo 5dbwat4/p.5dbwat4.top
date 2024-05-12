@@ -1,1 +1,0 @@
-import{v as o,J as r}from"./index-c2ed52a5.js";const e=o({name:"Add",render(){return r("svg",{width:"512",height:"512",viewBox:"0 0 512 512",fill:"none",xmlns:"http://www.w3.org/2000/svg"},r("path",{d:"M256 112V400M400 256H112",stroke:"currentColor","stroke-width":"32","stroke-linecap":"round","stroke-linejoin":"round"}))}});export{e as A};

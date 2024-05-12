@@ -1,0 +1,1 @@
+import{b2 as s,a5 as t,b1 as i}from"./index-6b27469d.js";function n(r,...a){if(Array.isArray(r))r.forEach(o=>n(o,...a));else return r(...a)}function u(){const r=s(!1);return t(()=>{r.value=!0}),i(r)}export{n as c,u as i};
